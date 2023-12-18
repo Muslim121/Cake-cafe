@@ -1,0 +1,218 @@
+body {
+  font-family: sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+.title {
+  font-family: "Architects Daughter", cursive;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+}
+.title:hover {
+  color: rgb(245, 7, 241);
+  cursor: pointer;
+  scale: 1.2;
+}
+.links {
+  display: flex;
+  align-items: center;
+}
+.links a {
+  text-decoration: none;
+  color: rgb(53, 52, 52);
+  font-size: 15px;
+  font-family: "Rubik", sans-serif;
+  margin-right: 16px;
+}
+.links a:hover {
+  color: rgb(245, 7, 241);
+  scale: 1.2;
+}
+#home {
+  border-bottom: 1px solid rgb(53, 52, 52);
+}
+#cart-svg {
+  font-size: 25px;
+  cursor: pointer;
+}
+#cart-svg:hover {
+  scale: 1.2;
+  color: rgb(245, 7, 241);
+}
+/* main */
+.main {
+  margin: 30px 0;
+}
+.img-1 {
+  border-radius: 15px;
+  width: 750px;
+  height: 480px;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.title-img {
+  position: absolute;
+  top: 17px;
+  font-size: 37px;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+.button {
+  position: absolute;
+  top: 80px;
+  font-size: 18px;
+  background: #fff;
+  font-family: "Rubik", sans-serif;
+  padding: 7px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s linear;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  scale: 1.1;
+}
+.svg-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+#one {
+  color: rgb(64, 64, 64);
+}
+#two,
+#three {
+  color: rgb(139, 139, 139);
+}
+.svg-buttons i {
+  margin-right: 13px;
+  cursor: pointer;
+}
+.svg-buttons i:hover {
+  scale: 1.2;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-menu {
+  font-weight: 800;
+  font-size: 25px;
+}
+.desc-menu {
+  color: rgb(53, 52, 52);
+  font-size: 16px;
+}
+.title-card {
+  color: rgb(53, 52, 52);
+  font-weight: 800;
+  margin: 15px 0px 5px;
+}
+.desc-card {
+  color: rgb(53, 52, 52);
+  margin-bottom: 10px;
+}
+.menu {
+  margin: 50px;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto;
+  width: 90%;
+  flex-wrap: wrap;
+}
+.card img {
+  width: 250px;
+  border-radius: 7px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.card:hover {
+  scale: 1.1;
+}
+@media only screen and (max-width: 500px) {
+  .cards {
+    justify-content: center;
+    gap: 20px;
+  }
+  .cards {
+    margin-top: 10px;
+  }
+  .card img {
+    border-radius: 15px;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .links {
+    display: none;
+  }
+  .header {
+    justify-content: center;
+    width: 90%;
+  }
+  .img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .img-1 {
+    height: 230px;
+  }
+  .links a {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .title-img {
+    font-size: 30px;
+  }
+  .button {
+    top: 180px;
+    font-size: 20px;
+  }
+  .svg-buttons i {
+    font-size: 20px;
+  }
+  .card img {
+    width: 320px;
+  }
+  .title-card {
+    font-size: 30px;
+  }
+  .desc-card {
+    font-size: 30px;
+  }
+  .title-menu {
+    font-size: 40px;
+    margin-top: 40px;
+  }
+  .desc-menu {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  .container {
+    overflow-x: hidden;
+  }
+}
